@@ -16,6 +16,13 @@ from typing import Tuple
 
 import pandas as pd
 import torchaudio
+
+# Lấy đường dẫn thư mục làm việc hiện tại
+current_directory = os.getcwd()
+
+# In đường dẫn thư mục hiện tại
+print("Đường dẫn thư mục hiện tại:", current_directory)
+
 from chimera.prepare_data.data_utils import (
     create_zip,
     extract_fbank_features,
